@@ -13,10 +13,8 @@ browser.maximize_window()
 browser.get(webUrl)
 #browser.find("name", "username").send_keys("13612966440")
 
-elements = browser.find_elements_by_id('kw')
-elements.clear()
-time.sleep(2)
-elements.send_keys(py + Keys.ENTER)
+element = browser.find_element_by_id('kw')
+element.send_keys("Python" + Keys.ENTER)
 
 
 
